@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+      https://www.springframework.org/schema/beans/spring-beans.xsd">
+
+    <bean id="cat" class="com.kuang.pojo.Cat"/>
+    <bean id="dog" class="com.kuang.pojo.Dog"/>
+
+    <bean id="people" class="com.kuang.pojo.People" autowire="byName">
+        <property name="name" value="小狂神呀"/>
+<!--        <property name="cat" ref="cat"/>
+        <property name="dog" ref="dog"/>-->
+    </bean>
+
+</beans>

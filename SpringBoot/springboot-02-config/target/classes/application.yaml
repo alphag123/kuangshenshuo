@@ -1,0 +1,17 @@
+person:
+  name: qinjiang
+  age: ${random.int}
+  happy: false
+  birth: 2019/11/02
+  maps: {k1: v1,k2: v2}
+  hello: haayy
+  lists:
+    - code
+    - music
+    - girl
+  dog:
+    name: ${person.hello:hello}_旺财
+
+dog:
+  first-name: 阿黄
+  age: 3
